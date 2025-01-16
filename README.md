@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 왓에버 과제
 
-## Getting Started
-
-First, run the development server:
+## 프로젝트 실행 방법
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000)에서 실행된 앱을 확인할 수 있습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 기술 스택
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 프레임워크: Next.js
+- 상태 관리: TanStack Query, React Context
+- 스타일링: Tailwindcss
 
-## Learn More
+## 폴더 구조
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src
+├── app
+│   ├── cart - 장바구니 페이지
+│   └── products - 상품 목록 페이지
+├── components
+│   ├── layouts - 레이아웃 관련 컴포넌트
+│   ├── shared - 공통 컴포넌트
+│   └── ui - 공통 UI 컴포넌트
+├── configs - 설정 관련 파일
+├── hooks - 공통 커스텀 훅
+├── lib - 공통 라이브러리
+├── services - 도메인 로직
+├── styles - 공통 스타일
+├── tests - 테스트
+```

@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db white;
+}
+
+@layer base {
+  :root {
+    --background: theme("colors.white");
+    --background-100: theme("colors.neutral.100");
+    --background-200: theme("colors.neutral.200");
+    --background-hover: theme("colors.neutral.100");
+    --main: theme("colors.neutral.800");
+    --sub: theme("colors.neutral.500");
+    --subtle: theme("colors.neutral.400");
+    --border: theme("colors.neutral.200");
+    --placeholder: theme("colors.neutral.400");
+    --primary: #2761ff;
+    --primary-dark: #0a4bff;
+    --ring: #84a5ff;
+    --error: theme("colors.red.500");
+    --error-dark: theme("colors.red.600");
+    --error-lighter: theme("colors.red.100");
+    --secondary: theme("colors.neutral.100");
+    --secondary-dark: theme("colors.neutral.200");
+    --ring-error: theme("colors.red.300");
+  }
+}
+
+@layer base {
+  body {
+    @apply text-main bg-background;
+  }
+
+  button,
+  a {
+    @apply focus-visible:focus-ring;
+  }
+
+  .focus-ring {
+    @apply ring-ring outline-none ring-2 ring-offset-2 ring-offset-background;
+  }
+}
